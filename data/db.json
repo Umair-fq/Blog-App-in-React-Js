@@ -1,0 +1,17 @@
+{
+    "blogs" :[
+        {
+            "title" : "The Blog Post is the most popular blog post ever created by the author",
+            "body" : "This blog post is the most popular blog post ever created by the author\n and has been the most popular blog post ever created by the author and has been the most popular blog and has the topic of the tourism. Blogs are created\n by the author and the author is the author of the blog.",
+            "author" : "Mario",
+            "id":  "1"
+
+        }, 
+        {
+            "title": "Gardening",
+            "body": "I love to do garden art and everything about it.",
+            "author": "Jordan",
+            "id": "2"
+        }
+    ]
+}

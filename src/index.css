@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.navbar{
+  background-color: rgb(42, 165, 128);
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+body{
+  background-color: #bdc3c7;
+  background-size: cover; /* Scale the image to cover the entire component */
+  background-position: center; /* Center the image within the component */
+  /* Add any additional styles you want for the background here */
+}
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.blogCard {
+  background-color: #F7F9FC;
+  border: 1px solid #E3E8EF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.blogTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.authorInfo {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.blogDescription {
+  font-size: 16px;
+  color: #444;
+} */
+
+/* Hover Effect */
+/* .blogCard:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #F2F8FF;
+} */
+
+/* BlogList.css */
+
+/* Style for the main container */
+.BlogList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style for the blog title */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for each individual blog card */
+.blogCard {
+  flex: 0 0 calc(25% - 20px); /* Four blogs per line */
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the blog title within each card */
+.blogTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Style for the author information */
+.authorInfo {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Style for the blog description */
+.blogDescription {
+  font-size: 16px;
+  color: #555;
+  margin-top: 16px;
+}
+
+/* Media query to adjust the number of blogs per line on smaller screens */
+@media screen and (max-width: 600px) {
+  .blogCard {
+    flex-basis: calc(50% - 20px); /* Two blogs per line on smaller screens */
+  }
+}
+
+.deleteBtn {
+  background-color: #f8f8f8; /* You can change the color as per your preference */
+  color: #dc3545; /* Text color for the button */
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
 }
