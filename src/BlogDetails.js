@@ -20,13 +20,13 @@ const BlogDetails = () => {
             {isPending && <div>Loading....</div>}
             {error && <div>{error}</div>}
             <div className="blog-details">
-                <h2>Blog Details - {id}</h2>
+                    {/* <h2>Blog Details - {id}</h2> */}
             </div>
-            {blog && (<div>
-                    <article>
-                        <h1>{blog.title}</h1>
-                        <p>{blog.author}</p>
-                        <div>{blog.body}</div>
+            {blog && (<div className='blog'>
+                    <article className='blogArticle'>
+                        <h1 className='title'>{blog.title}</h1>
+                        <p className='author'>written by: {blog.author}</p>
+                        <div className='body'>{blog.body}</div>
                         <button className="delete" onClick={HandleDelete}>Delete</button>
                     </article>
                 </div>)}

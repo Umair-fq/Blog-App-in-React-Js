@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import {PersonData} from './StakeHook.js'
 import CreateBlog from './CreateBlog';
 import BlogDetails from './BlogDetails.js';
+import NotFound from './NotFound';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route exact path="/blog/:id">
           <BlogDetails />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
       {/* <PersonData /> */}
