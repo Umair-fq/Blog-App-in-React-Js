@@ -1,7 +1,7 @@
-import { MdDelete } from "react-icons/md";
+// import { MdDelete } from "react-icons/md";
 
 //Actually we are creating this as a child component and we will get the props from the Home component
-const BlogList = ({blogs, title, HandleDelete}) => {
+const BlogList = ({blogs, title}) => {
     // const blogs = props.blogs
     // const title = props.title
     return ( 
@@ -13,7 +13,7 @@ const BlogList = ({blogs, title, HandleDelete}) => {
                 <h1 className="blogTitle">{blog.title}</h1>
                 <p className="authorInfo">Written by: {blog.author}</p>
                 <p className="blogDescription">{blog.description}</p>
-                <button className="deleteBtn" onClick={() => HandleDelete(blog.id)}><MdDelete /></button>
+                {/* <button className="deleteBtn" onClick={() => HandleDelete(blog.id)}><MdDelete /></button> */}
         </div>
     ))}
             </div>
